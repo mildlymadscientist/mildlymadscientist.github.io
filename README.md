@@ -57,4 +57,4 @@ Version Control: We chose to use Github’s large file sharing service, Git LFS,
 
 Github Desktop was used by all of us but the one Linux user in our group, which caused no problems. To avoid working with the same file, we worked on separate versions of the island, and combined the features when we got the time together in the lab. 
 
-Conclusion: As the most amatuer programmer on the team, my goal was to learn as mcu about Unreal Engine as I could for my own experience, so working together and being to see and understand every element of our project was awesome. It went so well, we hope to be able to continue our work, as we feel we are close to having a working game!
+Conclusion: As the most amatuer programmer on the team, my goal was to learn as much about Unreal Engine as I could for my own experience, so working together and being to see and understand every element of our project was awesome. It went so well, we hope to be able to continue our work, as we feel we are close to having a working game!
