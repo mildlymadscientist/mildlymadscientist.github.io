@@ -14,7 +14,15 @@ I concepted a overhead diving minigame, where the player would look down on the 
 Structure: The game is comprised of a few main tech features. Which have the player view, where one can navigate the island and interact with NPCs, we have an NPC dialogue system, and the UI system using widgets. As the bird, we have a separate movement system, a dive mechanic with a spam minigame, and the complex fish spawning system. 
 
 Movement: I worked on the character movement first, starting with a simple WASD movement where the character moves only one direction at a time, either on the x or y, using input mapping. 
-   
+
+
+![Screenshot 2024-05-03 160501](https://github.com/mildlymadscientist/mildlymadscientist.github.io/assets/117318083/26fd9945-b587-42a5-acb6-d4d9a4da0730)
+![Screenshot 2024-05-03 160456](https://github.com/mildlymadscientist/mildlymadscientist.github.io/assets/117318083/69262f8c-3602-477f-86d7-b5956d3d3b1e)
+![Screenshot 2024-05-03 144827](https://github.com/mildlymadscientist/mildlymadscientist.github.io/assets/117318083/1116065b-100b-400b-9fc3-a3d8e272bbf8)
+
+
+
+
 Then using some of the built in Unreal features, turned off Character Rotation yaw and turned on Orient Character to movement so the character could move on a the 45 degree angles for enhanced movement and orient the mesh so it would face the direction the character was going. At this point, me and another programmer experimented with omnidirectional movement, where A and D were turning left and right, and W and S were forward and backwards, but since our camera was fixed in place, there was no need to add complication. 
 The bird movement was similar, so we used the same input mapping, locked the map and attached a camera from above. We planned out a system to flip the bird back the way it came but when we did playtesting, based off instructor feedback, we chose to simply have the bird spiral around the screen and control a reticle in the water with WASD, ending up very similar to my original design of controlling a shadow. 
 
