@@ -28,15 +28,22 @@ The bird movement was similar, so we used the same input mapping, locked the map
 
 Dive Event: Because the swimming patterns of the fish were so complicated, we didn’t want to make it any more difficult to catch them, so in the original the check for collisions happened at the beginning, then the fish descended down the the fish spawning plane, and during that gave the player a quick time event of spamming space. If the player completes it, the fish is returned. While I worked less on the dive after playtesting, the bird was changed to a moving reticle, and the fish, or special item, is now checked off in quest progress. 
 
- 
+ ![Screenshot 2024-05-03 164016](https://github.com/mildlymadscientist/mildlymadscientist.github.io/assets/117318083/d345c27e-d570-4c6a-a53f-d778193bc9f5)
+
 
 Scrapped ideas: There were few features that didn’t serve our game at all, but one was my  system to first carry the fish over to a barrel on the dock after catching it, and only then would the fish be returned, if it collided with the barrel (or was close enough). It ended up being very redundant and tedious to just catch one fish, because there was already a dive event and a minigame. 
 
 Audio and Particles: I sourced all audio from Freesound, save a few sound that I synthesize, or edited greatly, using Emmisions Control 2 and Audacity. While in the future I have plans to synthesize and record every sound myself or with the team, it served the purpose in being cohesive enough and indiacting game events to the player. In Unreal, the ambient sound object only worked for on of our 4 ambient sounds, the wave and wind track. The music track stopped too abruptly, so me and the ui programmer attached it to an always running UI widget, and then when the music wouldn’t stop in the Unreal editor, we made sure to deconstruct the widget upon shutdown. The other two ambient tracks were based on location, and played when the player entered the trigger boxes. Initially this was simply done by using play sound, which we quickly realized meant it would not stop upon leaving the area. 
 
 We instead spawned in both sounds (and stopped them playing as when spawned the audio starts). 
+
+![Screenshot 2024-05-03 165746](https://github.com/mildlymadscientist/mildlymadscientist.github.io/assets/117318083/febe9a25-4a06-469b-8d7e-6cc5299624ef)
+
  
 When the player enters a triggerbox, that sound variable is played, when they leave it stops. 
+
+![Screenshot 2024-05-03 165734](https://github.com/mildlymadscientist/mildlymadscientist.github.io/assets/117318083/ebcb9813-c2d5-49e4-94f9-473643fd421b)
+
  
 The Particles were created using the Niagara system. For the different footstep materials, material classes were added in the project settings, and the physical material overrides were added to each object the player could walk on. While I initially used the Play sound and Play particle notifies, the particles would not scale properly, so I added notifies to the animations, and referenced them in the ABP. 
  
